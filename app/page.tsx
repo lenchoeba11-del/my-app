@@ -152,7 +152,7 @@ export default function RegistrationPage() {
 
       <Grid container spacing={4}>
         {/* Left Column - Form */}
-        <Grid item xs={12} md={7}>
+        <Grid container item xs={12} md={7}>
           <Paper
             elevation={0}
             sx={{
@@ -193,7 +193,7 @@ export default function RegistrationPage() {
 
                 <form onSubmit={handleSubmit}>
                   <Grid container spacing={2.5}>
-                    <Grid item xs={12} sm={6}>
+                    <Grid container item xs={12} sm={6}>
                       <TextField
                         fullWidth
                         name="firstName"
@@ -213,7 +213,7 @@ export default function RegistrationPage() {
                       />
                     </Grid>
 
-                    <Grid item xs={12} sm={6}>
+                    <Grid container item xs={12} sm={6}>
                       <TextField
                         fullWidth
                         name="lastName"
@@ -226,7 +226,7 @@ export default function RegistrationPage() {
                       />
                     </Grid>
 
-                    <Grid item xs={12}>
+                    <Grid container item xs={12}>
                       <TextField
                         fullWidth
                         name="email"
@@ -247,7 +247,7 @@ export default function RegistrationPage() {
                       />
                     </Grid>
 
-                    <Grid item xs={12}>
+                    <Grid container item xs={12}>
                       <TextField
                         fullWidth
                         name="phone"
@@ -267,7 +267,7 @@ export default function RegistrationPage() {
                       />
                     </Grid>
 
-                    <Grid item xs={12}>
+                    <Grid container item xs={12}>
                       <TextField
                         fullWidth
                         name="password"
@@ -299,7 +299,7 @@ export default function RegistrationPage() {
                       />
                     </Grid>
 
-                    <Grid item xs={12}>
+                    <Grid container item xs={12}>
                       <Typography variant="subtitle2" sx={{ mb: 1, color: '#666', fontWeight: 500 }}>
                         Programming Experience Level
                       </Typography>
@@ -331,7 +331,7 @@ export default function RegistrationPage() {
                       </Box>
                     </Grid>
 
-                    <Grid item xs={12} sx={{ pt: 2 }}>
+                    <Grid container item xs={12} sx={{ pt: 2 }}>
                       <Button
                         type="submit"
                         fullWidth
@@ -357,7 +357,7 @@ export default function RegistrationPage() {
         </Grid>
 
         {/* Right Column - Info */}
-        <Grid item xs={12} md={5}>
+        <Grid container item xs={12} md={5}>
           <Box sx={{ position: 'sticky', top: 20 }}>
             {/* Tech Stacks */}
             <Paper
@@ -387,7 +387,7 @@ export default function RegistrationPage() {
               
               <Grid container spacing={1.5}>
                 {techStacks.map((tech) => (
-                  <Grid item xs={6} key={tech.name}>
+                  <Grid container item xs={6} key={tech.name}>
                     <Box
                       sx={{
                         p: 1.5,
