@@ -1,6 +1,6 @@
 // app/registration/page.tsx
 'use client';
-
+// Updated for online class follow-up
 import React, { useState } from 'react';
 import {
   Container,
